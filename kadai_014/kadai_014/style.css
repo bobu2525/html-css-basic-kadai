@@ -1,0 +1,31 @@
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: "Arial", "Meiryo", sans-serif;
+}
+
+body {
+  text-align: center;
+}
+
+/* Noto Sans JPが何らかの理由で表示できない場合にsans-serifを表示 */
+h1 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 2em;
+  letter-spacing: 1.2em;
+}
+
+.text-skyblue {
+  color: skyblue;
+}
+
+.text-pink {
+  color: rgb(255, 192, 203);
+
+}
+
+.besic {
+  font-weight: bold;
+}
