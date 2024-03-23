@@ -1,0 +1,85 @@
+/* 課題の参考 */
+/* 16章 CSSで要素の幅と高さの調整方法を理解しよう：要素の幅や高さの指定方法について */
+/* 17章 CSSのボックスモデルを理解しよう：marginを使った余白の取り方、中央揃えの仕方について */
+/* 18章 CSSのdisplayを理解しよう：displayを使った要素を横並びにする方法について */
+/* 19章 CSSのpositionを理解しよう：positionを使った要素位置の指定方法について */
+
+#top {
+  position: relative; /* 要素内の子要素の位置を相対的に調整するために使用 */
+  width: 800px; /* 幅を800pxに設定 */
+  background-color: #dcc9f4; /* 背景色を設定 */
+  padding: 20px 0px; /* 上下に20pxのパディングを設定 */
+  margin: auto; /* 画面中央に配置 */
+  text-align: center;   /* #topセクション内のテキストを中央揃えに */
+  display: flex; /* Flexboxを使用して子要素を横並びにする */
+  justify-content: center; /* 子要素を中央揃えに */
+
+}
+
+#top .top-child {
+  width: 20%; /* 幅を20%に設定 */
+  margin: 0px 5px;/* 左右に5pxのマージンを設定して、要素間のスペースを確保 */
+  display: inline-block; /* インラインブロック要素として表示 */
+  background-color: #ffd9df; /* 背景色を設定 */
+}
+
+#middle {
+  position: relative; /* 要素内の子要素の位置を相対的に調整するために使用 */
+  width: 800px; /* 幅を800pxに設定 */
+  height: 800px; /* 高さを800pxに設定 */
+  margin: 20px auto; /* 上下に20pxの余白を入れて、画面の中央に配置 */
+  background-color: #ffd9df; /* 背景色を#ffd9dfに設定 */
+
+}
+#middle-child01, #middle-child02, #middle-child03 {
+  width: 200px;
+  height: 200px;
+  background-color: #87ceeb;
+  position: absolute;
+}
+
+#middle-child01 {
+
+  top: 100px;
+  left: 100px;
+}
+#middle-child02 {
+  
+  top: 300px;
+  left: 300px;
+}
+#middle-child03 {
+  top: 500px;
+  left: 500px;
+  
+}
+#bottom {
+  position: relative;
+  width: 800px;
+  height: 300px;
+  background-color: #87ceeb;
+  margin: auto;
+}
+#bottom-child01, #bottom-child02, #bottom-child03 {
+  width: 400px;
+  height: 100px;
+  background-color: #e5dcf0;
+  
+}
+
+#bottom-child01 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#bottom-child02 {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+}
+#bottom-child03 {
+  position: absolute;
+  top: 200px;
+  left: 400px;
+}
